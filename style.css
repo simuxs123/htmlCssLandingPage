@@ -145,12 +145,13 @@ body {
 
 textarea {
     resize: none;
+    width: 100%;
 }
 
 input,
 textarea {
     display: block;
-    width: 70%;
+    width: 100%;
     border-radius: 3px;
     border: none;
     padding: .7rem .8rem;
@@ -225,6 +226,7 @@ section:nth-child(1) {
 
 section:nth-child(1)>div>div>input {
     display: inline-block;
+    width: 70%;
 }
 
 section:nth-child(1)>div>div {
@@ -265,7 +267,7 @@ section:nth-child(2)>div {
 section:nth-child(2)>div>div {
     display: inline-block;
     width: 220px;
-    margin: 1% 6%;
+    margin: 1% 7%;
 }
 
 section:nth-child(2)>div>div>input {
@@ -288,12 +290,12 @@ section:nth-child(3) {
 }
 
 section:nth-child(3)>div {
-    padding: 15vh 0;
+    padding: 10vh 0;
     text-align: center;
 }
 
 section:nth-child(3)>div>div {
-    min-height: 240px;
+    padding: 5vh 0;
 }
 
 section:nth-child(3)>div>div>div {
