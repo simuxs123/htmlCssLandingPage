@@ -143,9 +143,9 @@ body {
     color: white;
 }
 
+
 textarea {
     resize: none;
-    width: 100%;
 }
 
 input,
@@ -188,20 +188,18 @@ p {
     color: rgba(255, 255, 255, 0.75);
 }
 
-section:nth-child(1)>div,
-section:nth-child(4)>div,
-section:nth-child(5)>div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
+.bg {
+    width: 70%;
+    margin: 0 auto;
 }
 
-section:nth-child(1),
-section:nth-child(4),
-section:nth-child(5) {
+.center {
+    text-align: center;
+}
+
+#section1,
+#section4,
+#section5 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -216,7 +214,7 @@ section {
     position: relative;
 }
 
-section:nth-child(1) {
+#section1 {
     background-image: linear-gradient(178deg,
             rgba(48, 47, 47, 0.6),
             rgba(36, 35, 35, 0.5)),
@@ -224,12 +222,20 @@ section:nth-child(1) {
     height: 100vh;
 }
 
-section:nth-child(1)>div>div>input {
-    display: inline-block;
-    width: 70%;
+.positionWithBg1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-section:nth-child(1)>div>div {
+.input-cont>input {
+    display: inline-block;
+}
+
+.input-cont {
     background-color: rgba(0, 0, 0, 0.801);
     height: 54px;
     width: 520px;
@@ -237,137 +243,142 @@ section:nth-child(1)>div>div {
     border-radius: 3px;
 }
 
-section:nth-child(1)>div {
+#section1>div {
     height: 200px;
     width: 70%;
     text-align: center
 }
 
 
-section:nth-child(1)>div>div>input:last-child {
+.input-cont input[type="submit"] {
     background-color: rgb(120, 211, 241);
     width: 30%;
 }
 
-section:nth-child(1)>div>div>input:first-child {
+.input-cont input[type="text"] {
     width: 60%
 }
 
-section:nth-child(2) {
+#section2 {
     background-color: rgb(236, 231, 231);
     width: 100%;
 }
 
-section:nth-child(2)>div {
+.positionWithBg2 {
     padding: 10vh 0 3vh 0;
-    width: 100%;
-    text-align: center;
 }
 
-section:nth-child(2)>div>div {
+.sec2Content {
     display: inline-block;
-    width: 220px;
-    margin: 1% 7%;
+    text-align: center;
+    width: 20%;
+    margin: 1% 9%;
 }
 
-section:nth-child(2)>div>div>input {
+.sec2Content:first-child {
+    margin-left: 0;
+}
+
+.sec2Content:last-child {
+    margin-right: 0;
+}
+
+.sec2Content>input {
+    width: initial;
     margin: 0 auto;
 }
 
-section:nth-child(2)>div>div>img {
-    width: 150px;
-    height: 150px;
+.sec2Content>img {
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
 }
 
-section:nth-child(2)>div>div>p {
+#section2 p {
     color: rgba(0, 0, 0, 0.575);
 }
 
-section:nth-child(3) {
+#section3 {
     background-color: rgb(187, 181, 181);
     width: 100%;
 }
 
-section:nth-child(3)>div {
+.positionWithBg3 {
     padding: 10vh 0;
-    text-align: center;
 }
 
-section:nth-child(3)>div>div {
+.contentRow {
     padding: 5vh 0;
 }
 
-section:nth-child(3)>div>div>div {
+.sec3Content {
+    width: 20%;
     display: inline-block;
-    width: 220px;
     vertical-align: top;
-    margin: 0 2%;
+    margin: 0 3.1%;
 }
 
-section:nth-child(3)>div>div:nth-child(1)>div {
-    text-align: left;
+.sec3Content:first-child {
+    margin-left: 0;
 }
 
-section:nth-child(3)>div>div:nth-child(2)>div>img {
-    text-align: left;
+.sec3Content:last-child {
+    margin-right: 0;
+}
+
+
+.secondRow img {
     width: 80px;
 }
 
-section:nth-child(3)>div>div>div>img {
+.firstRow img {
     width: 50px;
 }
 
-section:nth-child(3)>div>div>div>p {
+#section3 p {
     color: rgba(0, 0, 0, 0.575);
 }
 
-section:nth-child(4) {
+#section4 {
     background-image: linear-gradient(178deg,
             rgba(48, 47, 47, 0.6),
             rgba(36, 35, 35, 0.5)),
         url("./img/project1.jpg");
-    height: 80vh;
 }
 
-section:nth-child(4)>div {
-    height: 350px;
+.positionWithBg4 {
+    padding: 30vh 0;
     font-size: 0;
-    width: 1100px;
 }
 
-section:nth-child(4)>div>div {
-    display: inline-block;
-    font-size: 1rem;
-    float: left;
-    width: 550px;
-}
-
-section:nth-child(4)>div>div:nth-child(1) {
+.textContainer {
+    width: 40%;
+    vertical-align: top;
     padding-top: 3rem;
 }
 
-
-section:nth-child(4)>div>div:nth-child(2) {
-    padding-left: 3rem;
+.formContainer {
+    width: 60%;
+    padding-left: 10vw;
 }
 
-section:nth-child(5) {
+.positionWithBg4>div {
+    display: inline-block;
+    font-size: 1rem;
+
+}
+
+#section5 {
     background-image: linear-gradient(178deg,
             rgba(48, 47, 47, 0.6),
             rgba(36, 35, 35, 0.5)),
         url("./img/react1.jpg");
-    height: 80vh;
-    clear: both;
 }
 
-section:nth-child(5)>div {
-    height: 200px;
-    width: 1100px;
-    padding-right: 30rem;
+.positionWithBg5 {
+    padding: 30vh 20vw 30vh 0;
 }
 
-
-section:nth-child(5)>div>input {
+.positionWithBg5 input {
     width: 20%;
 }
